@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center text-white">
         <Image
-          src="/images/Lujia.jpg"
+          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80"
           alt="Afternoon tea at Emily Rose Tearoom"
           fill
           className="object-cover"
@@ -37,7 +37,7 @@ export default function Home() {
             <p>Food Hygiene Rating: 5 (Very Good).</p>
           </div>
           <Image
-            src="/images/np0gd.jpg"
+            src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80"
             alt="Homemade cakes and scones"
             width={600}
             height={400}
