@@ -11,10 +11,10 @@ export default function Gallery() {
     <div className="max-w-6xl mx-auto px-4 py-16">
       <h1 className="font-serif text-4xl text-rose-800 mb-8 text-center">Gallery</h1>
       <div className="grid md:grid-cols-2 gap-6">
-        <Image src="/images/Lujia.jpg" alt="Tea room table setting with afternoon tea" width={800} height={530} className="rounded-lg shadow" />
-        <Image src="/images/np0gd.jpg" alt="Homemade cakes, scones and sandwiches" width={800} height={530} className="rounded-lg shadow" />
+        <Image src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Tea room table setting with afternoon tea" width={800} height={530} className="rounded-lg shadow" />
+        <Image src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80" alt="Homemade cakes, scones and sandwiches" width={800} height={530} className="rounded-lg shadow" />
       </div>
-      <p className="text-center mt-8 text-stone-600">More photos coming soon. Follow us on Facebook for the latest.</p>
+      <p className="text-center mt-8 text-stone-600">More photos coming soon. Follow us on Facebook for the latest. Replace these with your own photos when ready.</p>
     </div>
   );
 }
