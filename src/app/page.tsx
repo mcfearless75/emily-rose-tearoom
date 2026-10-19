@@ -6,8 +6,8 @@ export default function Home() {
     <>
       <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center text-white">
         <Image
-          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80"
-          alt="Afternoon tea at Emily Rose Tearoom"
+          src="https://media-cdn.tripadvisor.com/media/photo-o/32/3f/f2/ed/emily-rose-tearoom.jpg"
+          alt="Interior of Emily Rose Tearoom with burgundy seating and unique wallpaper"
           fill
           className="object-cover"
           priority
@@ -37,8 +37,8 @@ export default function Home() {
             <p>Food Hygiene Rating: 5 (Very Good).</p>
           </div>
           <Image
-            src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80"
-            alt="Homemade cakes and scones"
+            src="https://media-cdn.tripadvisor.com/media/photo-o/32/3f/f2/e9/emily-rose-tearoom.jpg"
+            alt="Another view inside Emily Rose Tearoom"
             width={600}
             height={400}
             className="rounded-lg shadow-md"
