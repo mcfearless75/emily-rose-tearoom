@@ -7,14 +7,18 @@ export const metadata: Metadata = {
 };
 
 const photos = [
-  { src: "/images/afternoon-tea.jpg", alt: "Afternoon tea stand with cakes, sandwiches and treats" },
-  { src: "/images/breakfast.jpg", alt: "Hearty cooked breakfast with eggs, bacon, sausages and beans" },
-  { src: "/images/sandwich.jpg", alt: "Fresh toasted sandwich with salad and chips" },
-  { src: "/images/cakes.jpg", alt: "Homemade cakes under glass cloches" },
-  { src: "/images/waffles.jpg", alt: "Biscoff waffles with sauce" },
-  { src: "/images/interior.jpg", alt: "Burgundy seating and tiger wallpaper interior" },
-  { src: "/images/counter.jpg", alt: "Cake counter with homemade treats" },
-  { src: "/images/avocado-toast.jpg", alt: "Avocado toast with eggs" },
+  { src: "/images/FB_IMG_1792480381489.jpg", alt: "Afternoon tea stand with cakes and treats" },
+  { src: "/images/FB_IMG_1792480401661.jpg", alt: "Cooked breakfast" },
+  { src: "/images/FB_IMG_1792480274249.jpg", alt: "Fresh sandwich" },
+  { src: "/images/FB_IMG_1792480303582.jpg", alt: "Homemade cakes" },
+  { src: "/images/FB_IMG_1792480333462.jpg", alt: "Cakes under glass" },
+  { src: "/images/FB_IMG_1792480327397.jpg", alt: "Interior with burgundy seating" },
+  { src: "/images/FB_IMG_1792480314942.jpg", alt: "Cake counter" },
+  { src: "/images/FB_IMG_1792480284945.jpg", alt: "Avocado toast" },
+  { src: "/images/FB_IMG_1792480306241.jpg", alt: "More cakes and treats" },
+  { src: "/images/FB_IMG_1792480320795.jpg", alt: "Waffles or dessert" },
+  { src: "/images/FB_IMG_1792480338508.jpg", alt: "Tearoom interior detail" },
+  { src: "/images/FB_IMG_1792480368758.jpg", alt: "Food from the tearoom" },
 ];
 
 export default function Gallery() {
