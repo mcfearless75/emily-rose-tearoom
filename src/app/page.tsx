@@ -7,35 +7,41 @@ export default function Home() {
       <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center text-white overflow-hidden">
         <Image
           src="/images/FB_IMG_1792480381489.jpg"
-          alt="Afternoon tea at Emily Rose Tearoom"
+          alt="Afternoon tea stand at Emily Rose Tearoom"
           fill
           className="object-cover hero-zoom"
           priority
           unoptimized
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/45" />
         <div className="relative z-10 text-center px-4">
+          <p className="text-sm tracking-widest uppercase text-emerald-200 mb-2">Corringham, Essex · Since 2025</p>
           <h1 className="font-serif text-4xl md:text-6xl mb-4">Emily Rose Tearoom</h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto mb-6">
-            Warm, welcoming tea room serving hearty cooked breakfasts, fresh sandwiches, homemade cakes & indulgent afternoon teas.
+            Cooked breakfasts, homemade cakes and afternoon tea in a jewel-toned room with tiger wallpaper and the Naughty Corner.
           </p>
-          <Link href="/contact" className="bg-burgundy hover:bg-burgundy text-white px-6 py-3 rounded-md font-medium">
-            Book a Table
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Link href="/contact" className="bg-burgundy hover:bg-burgundy text-white px-6 py-3 rounded-md font-medium">
+              Book a Table
+            </Link>
+            <Link href="/private-hire" className="bg-white/20 hover:bg-white/30 text-white px-6 py-3 rounded-md font-medium border border-white/40">
+              Private Hire
+            </Link>
+          </div>
         </div>
       </section>
 
       <section className="max-w-6xl mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="font-serif text-3xl text-burgundy mb-4">Welcome</h2>
+            <h2 className="font-serif text-3xl text-burgundy mb-4">Not your average tearoom</h2>
             <p className="mb-4">
-              A warm, welcoming tea room serving hearty cooked breakfasts, fresh sandwiches, homemade cakes and indulgent afternoon teas. Great coffee, hot chocolates and prosecco too.
+              We’re a proper Corringham tea room — hearty cooked breakfasts, proper sandwiches, cakes under cloches, and afternoon tea served on the birdcage stand. Great coffee, hot chocolate and prosecco too.
             </p>
             <p className="mb-4">
-              Eat in, take away, or celebrate birthdays and baby showers with us. Dog friendly and family style with free WiFi.
+              The room itself is the difference: burgundy velvet seating, bold tiger wallpaper, and the Naughty Corner for when you want a bit of fun. Dog friendly, family style, free WiFi, and a Food Hygiene Rating of 5.
             </p>
-            <p>Food Hygiene Rating: 5 (Very Good).</p>
+            <p className="text-sm text-stone-500">Open Tuesday–Saturday, 9:30am–4:00pm · Closed Sunday & Monday</p>
           </div>
           <Image
             src="/images/FB_IMG_1792480401661.jpg"
@@ -48,24 +54,50 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+          <Image
+            src="/images/FB_IMG_1792480388797.jpg"
+            alt="Naughty Corner seating at Emily Rose Tearoom"
+            width={600}
+            height={450}
+            className="rounded-lg shadow-lg w-full h-auto object-cover"
+            unoptimized
+          />
+          <div>
+            <h2 className="font-serif text-3xl mb-4">The Naughty Corner</h2>
+            <p className="mb-4 text-stone-200">
+              Every good tearoom needs a corner with a bit of character. Ours has the sign, the burgundy seats, and the tiger wallpaper. Perfect for a quiet coffee, a long lunch, or the start of a celebration.
+            </p>
+            <p className="mb-6 text-stone-200">
+              Ask for it when you book, or hire the whole room for something special.
+            </p>
+            <Link href="/private-hire" className="inline-block bg-burgundy text-white px-5 py-2 rounded-md font-medium">
+              Enquire about private hire
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-emerald-50 py-16">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="font-serif text-3xl text-navy mb-8">What We Offer</h2>
+          <h2 className="font-serif text-3xl text-navy mb-2">What we do well</h2>
+          <p className="text-stone-600 mb-8 max-w-xl mx-auto">Signature things you’ll actually find on the table, not just on the menu description.</p>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="offer-card bg-white p-6 rounded-lg shadow">
-              <h3 className="font-serif text-xl text-emerald mb-2">Breakfasts</h3>
-              <p>Hearty cooked breakfasts and brunch favourites to start your day.</p>
+            <div className="offer-card bg-white p-6 rounded-lg shadow text-left">
+              <h3 className="font-serif text-xl text-emerald mb-2">Proper cooked breakfasts</h3>
+              <p className="text-sm">Eggs, bacon, sausages, beans, toast and all the extras. The full plate, done properly.</p>
             </div>
-            <div className="offer-card bg-white p-6 rounded-lg shadow">
-              <h3 className="font-serif text-xl text-emerald mb-2">Sandwiches & Lunch</h3>
-              <p>Fresh sandwiches on great bread, plus light bites.</p>
+            <div className="offer-card bg-white p-6 rounded-lg shadow text-left">
+              <h3 className="font-serif text-xl text-emerald mb-2">Homemade cakes under glass</h3>
+              <p className="text-sm">Slices, whole cakes, and the ones that disappear by mid-afternoon. Ask what’s on today.</p>
             </div>
-            <div className="offer-card bg-white p-6 rounded-lg shadow">
-              <h3 className="font-serif text-xl text-emerald mb-2">Afternoon Teas</h3>
-              <p>Indulgent afternoon teas perfect for celebrations.</p>
+            <div className="offer-card bg-white p-6 rounded-lg shadow text-left">
+              <h3 className="font-serif text-xl text-emerald mb-2">Afternoon tea on the stand</h3>
+              <p className="text-sm">Sandwiches, scones, cakes and treats on the birdcage stand. Ideal for birthdays and baby showers.</p>
             </div>
           </div>
-          <Link href="/menu" className="inline-block mt-8 text-burgundy font-medium hover:underline">View Menu →</Link>
+          <Link href="/menu" className="inline-block mt-8 text-burgundy font-medium hover:underline">See the menu →</Link>
         </div>
       </section>
 
