@@ -4,12 +4,12 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center text-white">
+      <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center text-white overflow-hidden">
         <Image
           src="https://media-cdn.tripadvisor.com/media/photo-o/32/3f/f2/ed/emily-rose-tearoom.jpg"
           alt="Interior of Emily Rose Tearoom with burgundy seating and unique wallpaper"
           fill
-          className="object-cover"
+          className="object-cover hero-zoom"
           priority
         />
         <div className="absolute inset-0 bg-black/40" />
