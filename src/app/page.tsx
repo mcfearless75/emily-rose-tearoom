@@ -50,15 +50,15 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="font-serif text-3xl text-navy mb-8">What We Offer</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow">
+            <div className="offer-card bg-white p-6 rounded-lg shadow">
               <h3 className="font-serif text-xl text-emerald mb-2">Breakfasts</h3>
               <p>Hearty cooked breakfasts and brunch favourites to start your day.</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow">
+            <div className="offer-card bg-white p-6 rounded-lg shadow">
               <h3 className="font-serif text-xl text-emerald mb-2">Sandwiches & Lunch</h3>
               <p>Fresh sandwiches on great bread, plus light bites.</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow">
+            <div className="offer-card bg-white p-6 rounded-lg shadow">
               <h3 className="font-serif text-xl text-emerald mb-2">Afternoon Teas</h3>
               <p>Indulgent afternoon teas perfect for celebrations.</p>
             </div>
