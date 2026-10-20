@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center text-white overflow-hidden">
         <Image
-          src="/images/afternoon-tea.jpg"
+          src="/images/FB_IMG_1792480381489.jpg"
           alt="Afternoon tea at Emily Rose Tearoom"
           fill
           className="object-cover hero-zoom"
@@ -37,7 +37,7 @@ export default function Home() {
             <p>Food Hygiene Rating: 5 (Very Good).</p>
           </div>
           <Image
-            src="/images/breakfast.jpg"
+            src="/images/FB_IMG_1792480401661.jpg"
             alt="Hearty cooked breakfast at Emily Rose Tearoom"
             width={600}
             height={400}
