@@ -26,6 +26,8 @@ export default function Header() {
             <li><Link href="/" className="hover:text-emerald" onClick={() => setOpen(false)}>Home</Link></li>
             <li><Link href="/about" className="hover:text-emerald" onClick={() => setOpen(false)}>About</Link></li>
             <li><Link href="/menu" className="hover:text-emerald" onClick={() => setOpen(false)}>Menu</Link></li>
+            <li><Link href="/private-hire" className="hover:text-emerald" onClick={() => setOpen(false)}>Private Hire</Link></li>
+            <li><Link href="/event-catering" className="hover:text-emerald" onClick={() => setOpen(false)}>Event Catering</Link></li>
             <li><Link href="/gallery" className="hover:text-emerald" onClick={() => setOpen(false)}>Gallery</Link></li>
             <li><Link href="/contact" className="hover:text-emerald" onClick={() => setOpen(false)}>Contact</Link></li>
           </ul>
