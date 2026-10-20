@@ -3,12 +3,27 @@
 :root {
   --font-sans: var(--font-inter);
   --font-serif: var(--font-playfair);
+  --color-navy: #1a365d;
+  --color-emerald: #065f46;
+  --color-burgundy: #7f1d1d;
 }
 
 body {
   font-family: var(--font-sans), system-ui, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
 }
 
 .font-serif {
   font-family: var(--font-serif), Georgia, serif;
 }
+
+.text-navy { color: var(--color-navy); }
+.text-emerald { color: var(--color-emerald); }
+.text-burgundy { color: var(--color-burgundy); }
+.bg-navy { background-color: var(--color-navy); }
+.bg-emerald { background-color: var(--color-emerald); }
+.bg-burgundy { background-color: var(--color-burgundy); }
+.border-emerald { border-color: var(--color-emerald); }
+.hover\:text-emerald:hover { color: var(--color-emerald); }
+.hover\:bg-burgundy:hover { background-color: var(--color-burgundy); }
