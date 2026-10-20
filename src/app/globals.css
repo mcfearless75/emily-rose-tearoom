@@ -27,3 +27,18 @@ body {
 .border-emerald { border-color: var(--color-emerald); }
 .hover\:text-emerald:hover { color: var(--color-emerald); }
 .hover\:bg-burgundy:hover { background-color: var(--color-burgundy); }
+
+/* Slow Ken Burns zoom for hero */
+@keyframes kenburns {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.12);
+  }
+}
+
+.hero-zoom {
+  animation: kenburns 25s ease-out infinite alternate;
+  transform-origin: center center;
+}
