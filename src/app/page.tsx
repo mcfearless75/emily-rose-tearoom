@@ -11,6 +11,7 @@ export default function Home() {
           fill
           className="object-cover hero-zoom"
           priority
+          unoptimized
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center px-4">
@@ -42,6 +43,7 @@ export default function Home() {
             width={600}
             height={400}
             className="rounded-lg shadow-md"
+            unoptimized
           />
         </div>
       </section>
