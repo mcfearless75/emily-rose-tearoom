@@ -12,6 +12,10 @@ export default function Footer() {
         <div>
           <h4 className="font-medium mb-2 text-emerald-200">Hours</h4>
           <p className="text-sm">Tuesday – Saturday<br />9:30am – 4:00pm<br />Closed Sunday & Monday</p>
+          <div className="mt-4 text-sm space-y-1">
+            <Link href="/private-hire" className="block hover:text-emerald">Private Hire</Link>
+            <Link href="/event-catering" className="block hover:text-emerald">Event Catering</Link>
+          </div>
         </div>
         <div>
           <h4 className="font-medium mb-2 text-emerald-200">Follow</h4>
