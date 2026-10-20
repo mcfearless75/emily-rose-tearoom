@@ -30,15 +30,37 @@ body {
 
 /* Slow Ken Burns zoom for hero */
 @keyframes kenburns {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.12);
-  }
+  0% { transform: scale(1); }
+  100% { transform: scale(1.12); }
 }
 
 .hero-zoom {
   animation: kenburns 25s ease-out infinite alternate;
   transform-origin: center center;
+}
+
+/* Card fade-up entrance */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.offer-card {
+  animation: fadeUp 0.7s ease-out both;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-card:nth-child(1) { animation-delay: 0.1s; }
+.offer-card:nth-child(2) { animation-delay: 0.25s; }
+.offer-card:nth-child(3) { animation-delay: 0.4s; }
+
+.offer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
