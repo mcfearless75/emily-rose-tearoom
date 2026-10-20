@@ -5,13 +5,13 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "About Emily Rose Tearoom in Corringham, Essex. Warm welcoming tea room for breakfasts, cakes, afternoon teas and celebrations. Food Hygiene Rating 5.",
+    "About Emily Rose Tearoom in Corringham, Essex. Jewel-toned space with tiger wallpaper and the Naughty Corner. Breakfasts, cakes, afternoon teas and celebrations. Food Hygiene Rating 5.",
   keywords: [
     "Emily Rose Tearoom",
     "tea room Corringham",
+    "Naughty Corner",
     "cafe Essex",
     "afternoon tea Corringham",
-    "breakfast Corringham",
   ],
 };
 
@@ -23,18 +23,18 @@ export default function About() {
       <div className="grid md:grid-cols-2 gap-10 items-center mb-12">
         <div>
           <p className="text-lg mb-4">
-            Emily Rose Tearoom is a warm, welcoming tea room on Fobbing Road in Corringham, Essex. We opened in 2025 and love welcoming locals and visitors for hearty breakfasts, fresh sandwiches, homemade cakes and indulgent afternoon teas.
+            Emily Rose Tearoom opened in 2025 on Fobbing Road in Corringham. We serve hearty cooked breakfasts, fresh sandwiches, homemade cakes and afternoon tea on the birdcage stand.
           </p>
           <p className="mb-4">
-            Whether you want to eat in, grab a takeaway, or celebrate a birthday, baby shower or special occasion, we look forward to seeing you. We are dog friendly, family style, and offer free WiFi.
+            The room is the thing that sets us apart: burgundy velvet seating, bold tiger wallpaper, and the Naughty Corner. It’s relaxed and family style, dog friendly, with free WiFi — a proper local tearoom rather than a generic café.
           </p>
           <p>
-            Our distinctive interior — with burgundy seating and unique wallpaper — creates a relaxed, characterful space for coffee, cake and conversation.
+            Whether you’re popping in for breakfast, booking a table for afternoon tea, or hiring the space for a baby shower or birthday, we’re happy to see you.
           </p>
         </div>
         <Image
           src="/images/FB_IMG_1792480327397.jpg"
-          alt="Interior of Emily Rose Tearoom with burgundy seating"
+          alt="Interior of Emily Rose Tearoom with burgundy seating and wallpaper"
           width={600}
           height={400}
           className="rounded-lg shadow-md w-full h-auto"
@@ -45,15 +45,15 @@ export default function About() {
       <div className="grid md:grid-cols-3 gap-6 mb-12">
         <div className="bg-white p-6 rounded-lg shadow text-center">
           <h3 className="font-serif text-xl text-emerald mb-2">Food Hygiene Rating 5</h3>
-          <p className="text-sm">Very Good rating from Thurrock Council. We take pride in fresh, safe food.</p>
+          <p className="text-sm">Very Good from Thurrock Council. Fresh food, looked after properly.</p>
         </div>
         <div className="bg-white p-6 rounded-lg shadow text-center">
           <h3 className="font-serif text-xl text-emerald mb-2">Dog Friendly</h3>
-          <p className="text-sm">Well-behaved dogs are welcome. Family style and relaxed atmosphere.</p>
+          <p className="text-sm">Well-behaved dogs welcome. Family style and relaxed.</p>
         </div>
         <div className="bg-white p-6 rounded-lg shadow text-center">
-          <h3 className="font-serif text-xl text-emerald mb-2">Since 2025</h3>
-          <p className="text-sm">A new favourite in Corringham for breakfasts, cakes and celebrations.</p>
+          <h3 className="font-serif text-xl text-emerald mb-2">The Naughty Corner</h3>
+          <p className="text-sm">Our signature spot — ask for it when you book.</p>
         </div>
       </div>
 
