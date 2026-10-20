@@ -7,13 +7,13 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-white shadow-sm sticky top-0 z-50 border-b border-emerald-100">
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="font-serif text-2xl text-rose-700">
+        <Link href="/" className="font-serif text-2xl text-burgundy-700">
           Emily Rose Tearoom
         </Link>
         <button
-          className="md:hidden"
+          className="md:hidden text-navy-800"
           onClick={() => setOpen(!open)}
           aria-label="Menu"
         >
@@ -22,12 +22,12 @@ export default function Header() {
           </svg>
         </button>
         <nav className={`${open ? "block" : "hidden"} md:block absolute md:static top-16 left-0 right-0 bg-white md:bg-transparent shadow-md md:shadow-none p-4 md:p-0`}>
-          <ul className="flex flex-col md:flex-row gap-4 md:gap-6 text-sm font-medium">
-            <li><Link href="/" className="hover:text-rose-700" onClick={() => setOpen(false)}>Home</Link></li>
-            <li><Link href="/about" className="hover:text-rose-700" onClick={() => setOpen(false)}>About</Link></li>
-            <li><Link href="/menu" className="hover:text-rose-700" onClick={() => setOpen(false)}>Menu</Link></li>
-            <li><Link href="/gallery" className="hover:text-rose-700" onClick={() => setOpen(false)}>Gallery</Link></li>
-            <li><Link href="/contact" className="hover:text-rose-700" onClick={() => setOpen(false)}>Contact</Link></li>
+          <ul className="flex flex-col md:flex-row gap-4 md:gap-6 text-sm font-medium text-navy-800">
+            <li><Link href="/" className="hover:text-emerald-700" onClick={() => setOpen(false)}>Home</Link></li>
+            <li><Link href="/about" className="hover:text-emerald-700" onClick={() => setOpen(false)}>About</Link></li>
+            <li><Link href="/menu" className="hover:text-emerald-700" onClick={() => setOpen(false)}>Menu</Link></li>
+            <li><Link href="/gallery" className="hover:text-emerald-700" onClick={() => setOpen(false)}>Gallery</Link></li>
+            <li><Link href="/contact" className="hover:text-emerald-700" onClick={() => setOpen(false)}>Contact</Link></li>
           </ul>
         </nav>
       </div>
