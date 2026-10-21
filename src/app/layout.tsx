@@ -7,7 +7,11 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
+const siteUrl = "https://www.emilyrosetearoom.co.uk";
+const ogImage = "/images/FB_IMG_1792480381489.jpg";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Emily Rose Tearoom | Corringham, Essex",
     template: "%s | Emily Rose Tearoom",
@@ -27,6 +31,22 @@ export const metadata: Metadata = {
     description: "Hearty breakfasts, homemade cakes and afternoon teas in Corringham.",
     type: "website",
     locale: "en_GB",
+    url: siteUrl,
+    siteName: "Emily Rose Tearoom",
+    images: [
+      {
+        url: ogImage,
+        width: 1200,
+        height: 630,
+        alt: "Afternoon tea at Emily Rose Tearoom",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Emily Rose Tearoom | Corringham",
+    description: "Hearty breakfasts, homemade cakes and afternoon teas in Corringham.",
+    images: [ogImage],
   },
   robots: { index: true, follow: true },
 };
@@ -40,7 +60,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "CafeOrCoffeeShop",
     name: "Emily Rose Tearoom",
-    image: "https://emily-rose-tearoom.vercel.app/images/Lujia.jpg",
+    image: `${siteUrl}/images/FB_IMG_1792480381489.jpg`,
     address: {
       "@type": "PostalAddress",
       streetAddress: "36 Fobbing Road",
@@ -54,7 +74,7 @@ export default function RootLayout({
       latitude: 51.526,
       longitude: 0.466,
     },
-    url: "https://emily-rose-tearoom.vercel.app",
+    url: siteUrl,
     telephone: "+447564840771",
     servesCuisine: ["British", "Cafe", "Afternoon Tea"],
     priceRange: "££",
