@@ -36,12 +36,12 @@ export default function Home() {
           <div>
             <h2 className="font-serif text-3xl text-burgundy mb-4">Not your average tearoom</h2>
             <p className="mb-4">
-              We’re a proper Corringham tea room — hearty cooked breakfasts, proper sandwiches, cakes under cloches, and afternoon tea served on the birdcage stand. Great coffee, hot chocolate and prosecco too.
+              We’re a proper Corringham tea room - hearty cooked breakfasts, proper sandwiches, cakes under cloches, and afternoon tea served on the birdcage stand. Great coffee, hot chocolate and prosecco too.
             </p>
             <p className="mb-4">
               The room itself is the difference: burgundy velvet seating, bold tiger wallpaper, and the Naughty Corner for when you want a bit of fun. Dog friendly, family style, free WiFi, and a Food Hygiene Rating of 5.
             </p>
-            <p className="text-sm text-stone-500">Open Tuesday–Saturday, 9:30am–4:00pm · Closed Sunday & Monday (Sundays available for private hire only)</p>
+            <p className="text-sm text-stone-500">Open Tuesday-Saturday, 9:30am-4:00pm · Closed Sunday & Monday (Sundays available for private hire only)</p>
           </div>
           <Image
             src="/images/FB_IMG_1792480401661.jpg"
@@ -107,8 +107,8 @@ export default function Home() {
           <div>
             <p className="mb-2"><strong>36 Fobbing Road</strong><br />Corringham, Stanford-le-Hope<br />Essex SS17 9BG</p>
             <p className="mb-2"><a href="tel:07564840771" className="text-burgundy">07564 840771</a></p>
-            <p className="mb-2">Tuesday – Saturday: 9:30am – 4:00pm<br />Closed Sunday & Monday</p>
-            <p className="mb-4 text-sm text-stone-600">Sundays available for private hire only — <Link href="/private-hire" className="text-burgundy hover:underline">enquire here</Link></p>
+            <p className="mb-2">Tuesday - Saturday: 9:30am - 4:00pm<br />Closed Sunday & Monday</p>
+            <p className="mb-4 text-sm text-stone-600">Sundays available for private hire only - <Link href="/private-hire" className="text-burgundy hover:underline">enquire here</Link></p>
             <a href="https://maps.google.com/?q=36+Fobbing+Road+Corringham+SS17+9BG" target="_blank" rel="noopener" className="text-burgundy hover:underline">Get Directions</a>
           </div>
           <div className="aspect-video">
