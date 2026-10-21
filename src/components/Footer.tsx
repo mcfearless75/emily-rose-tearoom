@@ -7,11 +7,11 @@ export default function Footer() {
         <div>
           <h3 className="font-serif text-xl text-white mb-2">Emily Rose Tearoom</h3>
           <p className="text-sm">36 Fobbing Road<br />Corringham, Essex<br />SS17 9BG</p>
-          <p className="text-sm mt-2"><a href="tel:07564840771" className="hover:text-emerald">07564 840771</a></p>
+          <p className="text-sm mt-2"><a href="tel:01375768400" className="hover:text-emerald">01375 768400</a></p>
         </div>
         <div>
           <h4 className="font-medium mb-2 text-emerald-200">Hours</h4>
-          <p className="text-sm">Tuesday – Saturday<br />9:30am – 4:00pm<br />Closed Sunday & Monday</p>
+          <p className="text-sm">Tuesday - Saturday<br />9:30am - 4:00pm<br />Closed Sunday & Monday</p>
           <div className="mt-4 text-sm space-y-1">
             <Link href="/private-hire" className="block hover:text-emerald">Private Hire</Link>
             <Link href="/event-catering" className="block hover:text-emerald">Event Catering</Link>
