@@ -30,11 +30,11 @@ export default function EventCatering() {
 
       <h2 className="font-serif text-2xl text-emerald mt-8 mb-3">What We Can Provide</h2>
       <ul className="list-disc pl-6 space-y-2 mb-6">
-        <li><strong>Afternoon tea platters</strong> — sandwiches, scones, cakes and treats</li>
-        <li><strong>Homemade cakes & desserts</strong> — slices, whole cakes, or celebration cakes</li>
-        <li><strong>Sandwich and savoury selections</strong> — perfect for meetings and buffets</li>
-        <li><strong>Breakfast and brunch boxes</strong> — for morning events</li>
-        <li><strong>Drinks</strong> — tea, coffee, and soft drinks options</li>
+        <li><strong>Afternoon tea platters</strong> - sandwiches, scones, cakes and treats</li>
+        <li><strong>Homemade cakes & desserts</strong> - slices, whole cakes, or celebration cakes</li>
+        <li><strong>Sandwich and savoury selections</strong> - perfect for meetings and buffets</li>
+        <li><strong>Breakfast and brunch boxes</strong> - for morning events</li>
+        <li><strong>Drinks</strong> - tea, coffee, and soft drinks options</li>
         <li>Flexible quantities to suit groups of any size</li>
       </ul>
 
@@ -67,7 +67,7 @@ export default function EventCatering() {
       </ol>
 
       <p className="mb-6">
-        All food is prepared fresh in our kitchen (Food Hygiene Rating 5). Dietary requirements can usually be accommodated — just let us know when you enquire.
+        All food is prepared fresh in our kitchen (Food Hygiene Rating 5). Dietary requirements can usually be accommodated - just let us know when you enquire.
       </p>
 
       <div className="bg-emerald-50 p-6 rounded-lg">
