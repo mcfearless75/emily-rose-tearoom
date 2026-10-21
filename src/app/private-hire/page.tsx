@@ -29,7 +29,7 @@ export default function PrivateHire() {
     <div className="max-w-4xl mx-auto px-4 py-16">
       <h1 className="font-serif text-4xl text-burgundy mb-4">Private Hire</h1>
       <p className="text-lg text-navy mb-6">
-        Host your gathering in the heart of Corringham. Hire the whole tearoom — burgundy seating, tiger wallpaper and the Naughty Corner — for wakes, baby showers, birthdays, bridal gatherings or a private afternoon tea.
+        Host your gathering in the heart of Corringham. Hire the whole tearoom - burgundy seating, tiger wallpaper and the Naughty Corner - for wakes, baby showers, birthdays, bridal gatherings or a private afternoon tea.
       </p>
 
       <div className="mb-8">
@@ -45,9 +45,9 @@ export default function PrivateHire() {
 
       <h2 className="font-serif text-2xl text-emerald mt-8 mb-3">Why hire our room?</h2>
       <ul className="list-disc pl-6 space-y-2 mb-6">
-        <li>Exclusive use of a distinctive space — not a generic function room</li>
+        <li>Exclusive use of a distinctive space - not a generic function room</li>
         <li>The Naughty Corner and tiger wallpaper make it memorable for photos</li>
-        <li>Ideal for intimate groups (around 20–30 guests)</li>
+        <li>Ideal for intimate groups (around 20-30 guests)</li>
         <li>Flexible packages: afternoon tea on the stand, cakes, sandwiches and drinks</li>
         <li>Friendly team who already know how to look after gatherings of all kinds</li>
         <li>Easy location on Fobbing Road, Corringham (SS17 9BG)</li>
@@ -80,7 +80,7 @@ export default function PrivateHire() {
 
       <h2 className="font-serif text-2xl text-emerald mt-8 mb-3">How to book</h2>
       <p className="mb-4">
-        Private hire is available Tuesday–Saturday during opening hours (9:30am–4:00pm), and on <strong>Sundays for private hire only</strong>. Subject to availability — get in touch early, especially for weekends.
+        Private hire is available Tuesday-Saturday during opening hours (9:30am-4:00pm), and on <strong>Sundays for private hire only</strong>. Subject to availability - get in touch early, especially for weekends.
       </p>
       <p className="mb-6">
         Call <a href="tel:07564840771" className="text-burgundy font-medium">07564 840771</a> or use the contact form. Tell us the date, guest numbers, occasion (including wakes), and whether you want the Naughty Corner highlighted.
