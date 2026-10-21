@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Gallery",
-  description: "Photos from Emily Rose Tearoom – afternoon teas, cakes, breakfasts and our welcoming space in Corringham.",
+  description: "Photos from Emily Rose Tearoom - afternoon teas, cakes, breakfasts and our welcoming space in Corringham.",
 };
 
 const photos = [
@@ -27,14 +27,16 @@ export default function Gallery() {
       <h1 className="font-serif text-4xl text-burgundy mb-8 text-center">Gallery</h1>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {photos.map((photo) => (
-          <Image
-            key={photo.src}
-            src={photo.src}
-            alt={photo.alt}
-            width={800}
-            height={530}
-            className="rounded-lg shadow w-full h-auto object-cover"
-          />
+          <div key={photo.src} className="gallery-item shadow">
+            <Image
+              src={photo.src}
+              alt={photo.alt}
+              width={800}
+              height={530}
+              className="w-full h-auto object-cover"
+              unoptimized
+            />
+          </div>
         ))}
       </div>
       <p className="text-center mt-8 text-stone-600">
