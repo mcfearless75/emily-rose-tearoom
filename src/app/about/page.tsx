@@ -26,7 +26,7 @@ export default function About() {
             Emily Rose Tearoom opened in 2025 on Fobbing Road in Corringham. We serve hearty cooked breakfasts, fresh sandwiches, homemade cakes and afternoon tea on the birdcage stand.
           </p>
           <p className="mb-4">
-            The room is the thing that sets us apart: burgundy velvet seating, bold tiger wallpaper, and the Naughty Corner. It’s relaxed and family style, dog friendly, with free WiFi — a proper local tearoom rather than a generic café.
+            The room is the thing that sets us apart: burgundy velvet seating, bold tiger wallpaper, and the Naughty Corner. It’s relaxed and family style, dog friendly, with free WiFi - a proper local tearoom rather than a generic café.
           </p>
           <p>
             Whether you’re popping in for breakfast, booking a table for afternoon tea, or hiring the space for a baby shower or birthday, we’re happy to see you.
@@ -53,7 +53,7 @@ export default function About() {
         </div>
         <div className="bg-white p-6 rounded-lg shadow text-center">
           <h3 className="font-serif text-xl text-emerald mb-2">The Naughty Corner</h3>
-          <p className="text-sm">Our signature spot — ask for it when you book.</p>
+          <p className="text-sm">Our signature spot - ask for it when you book.</p>
         </div>
       </div>
 
