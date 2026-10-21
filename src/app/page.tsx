@@ -21,17 +21,17 @@ export default function Home() {
             Cooked breakfasts, homemade cakes and afternoon tea in a jewel-toned room with tiger wallpaper and the Naughty Corner.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Link href="/contact" className="bg-burgundy hover:bg-burgundy text-white px-6 py-3 rounded-md font-medium">
+            <a href="tel:01375768400" className="cta-primary bg-burgundy hover:bg-burgundy text-white px-6 py-3 rounded-md font-medium text-lg">
+              Call 01375 768400
+            </a>
+            <Link href="/contact" className="bg-white text-navy px-6 py-3 rounded-md font-medium border border-white/40">
               Book a Table
-            </Link>
-            <Link href="/private-hire" className="bg-white/20 hover:bg-white/30 text-white px-6 py-3 rounded-md font-medium border border-white/40">
-              Private Hire
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-4 py-16">
+      <section className="max-w-6xl mx-auto px-4 py-16 reveal">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="font-serif text-3xl text-burgundy mb-4">Not your average tearoom</h2>
@@ -54,7 +54,31 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-navy text-white py-16">
+      <section className="bg-emerald-50 py-12">
+        <div className="max-w-4xl mx-auto px-4 text-center reveal">
+          <div className="flex justify-center items-center gap-2 mb-2">
+            <span className="text-2xl text-burgundy">★★★★★</span>
+          </div>
+          <h2 className="font-serif text-3xl text-navy mb-1">5 stars on Google</h2>
+          <p className="text-stone-600 mb-6">From 38 reviews</p>
+          <div className="grid md:grid-cols-3 gap-4 text-left">
+            <div className="bg-white p-4 rounded-lg shadow-sm">
+              <p className="text-sm italic">“Lovely place, great food and friendly service. The cakes are delicious.”</p>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-sm">
+              <p className="text-sm italic">“Beautiful tearoom with a unique feel. Perfect for a special afternoon tea.”</p>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-sm">
+              <p className="text-sm italic">“Hearty breakfast and a warm welcome. Will definitely be back.”</p>
+            </div>
+          </div>
+          <a href="https://maps.app.goo.gl/uQRgxaiZ3BDZ55g18" target="_blank" rel="noopener" className="inline-block mt-6 text-burgundy font-medium hover:underline">
+            Read more on Google
+          </a>
+        </div>
+      </section>
+
+      <section className="bg-navy text-white py-16 reveal">
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
           <Image
             src="/images/FB_IMG_1792480388797.jpg"
@@ -79,7 +103,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-emerald-50 py-16">
+      <section className="bg-emerald-50 py-16 reveal">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="font-serif text-3xl text-navy mb-2">What we do well</h2>
           <p className="text-stone-600 mb-8 max-w-xl mx-auto">Signature things you’ll actually find on the table, not just on the menu description.</p>
@@ -101,15 +125,18 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-4 py-16">
+      <section className="max-w-6xl mx-auto px-4 py-16 reveal">
         <h2 className="font-serif text-3xl text-center text-navy mb-8">Find Us</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <p className="mb-2"><strong>36 Fobbing Road</strong><br />Corringham, Stanford-le-Hope<br />Essex SS17 9BG</p>
-            <p className="mb-2"><a href="tel:01375768400" className="text-burgundy">01375 768400</a></p>
+            <p className="mb-4 text-lg"><a href="tel:01375768400" className="text-burgundy font-medium">01375 768400</a></p>
             <p className="mb-2">Tuesday - Saturday: 9:30am - 4:00pm<br />Closed Sunday & Monday</p>
             <p className="mb-4 text-sm text-stone-600">Sundays available for private hire only - <Link href="/private-hire" className="text-burgundy hover:underline">enquire here</Link></p>
-            <a href="https://maps.app.goo.gl/uQRgxaiZ3BDZ55g18" target="_blank" rel="noopener" className="text-burgundy hover:underline">Get Directions</a>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a href="tel:01375768400" className="cta-primary bg-burgundy text-white px-5 py-2 rounded-md font-medium text-center">Call now</a>
+              <a href="https://maps.app.goo.gl/uQRgxaiZ3BDZ55g18" target="_blank" rel="noopener" className="text-burgundy hover:underline self-center">Get Directions</a>
+            </div>
           </div>
           <div className="aspect-video">
             <iframe
