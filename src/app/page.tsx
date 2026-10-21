@@ -106,10 +106,10 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <p className="mb-2"><strong>36 Fobbing Road</strong><br />Corringham, Stanford-le-Hope<br />Essex SS17 9BG</p>
-            <p className="mb-2"><a href="tel:07564840771" className="text-burgundy">07564 840771</a></p>
+            <p className="mb-2"><a href="tel:01375768400" className="text-burgundy">01375 768400</a></p>
             <p className="mb-2">Tuesday - Saturday: 9:30am - 4:00pm<br />Closed Sunday & Monday</p>
             <p className="mb-4 text-sm text-stone-600">Sundays available for private hire only - <Link href="/private-hire" className="text-burgundy hover:underline">enquire here</Link></p>
-            <a href="https://maps.google.com/?q=36+Fobbing+Road+Corringham+SS17+9BG" target="_blank" rel="noopener" className="text-burgundy hover:underline">Get Directions</a>
+            <a href="https://maps.app.goo.gl/uQRgxaiZ3BDZ55g18" target="_blank" rel="noopener" className="text-burgundy hover:underline">Get Directions</a>
           </div>
           <div className="aspect-video">
             <iframe
