@@ -9,6 +9,8 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 
 const siteUrl = "https://www.emilyrosetearoom.co.uk";
 const ogImage = "/images/FB_IMG_1792480381489.jpg";
+const phone = "+441375768400";
+const phoneDisplay = "01375 768400";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -17,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s | Emily Rose Tearoom",
   },
   description:
-    "Warm welcoming tea room in Corringham, Essex. Hearty cooked breakfasts, fresh sandwiches, homemade cakes and indulgent afternoon teas. Dog friendly, free WiFi. Book for birthdays and celebrations.",
+    "Emily Rose Tearoom in Corringham, Essex. Hearty cooked breakfasts, homemade cakes and afternoon teas. Dog friendly, free WiFi. Open Tuesday to Saturday 9:30am-4pm. 5-star rated.",
   keywords: [
     "Emily Rose Tearoom",
     "tea room Corringham",
@@ -25,10 +27,11 @@ export const metadata: Metadata = {
     "breakfast Corringham",
     "cafe Stanford-le-Hope",
     "dog friendly cafe Thurrock",
+    "tea room SS17",
   ],
   openGraph: {
-    title: "Emily Rose Tearoom | Corringham",
-    description: "Hearty breakfasts, homemade cakes and afternoon teas in Corringham.",
+    title: "Emily Rose Tearoom | Corringham, Essex",
+    description: "Hearty breakfasts, homemade cakes and afternoon teas. Dog friendly tea room in Corringham. Open Tue-Sat 9:30am-4pm.",
     type: "website",
     locale: "en_GB",
     url: siteUrl,
@@ -38,17 +41,18 @@ export const metadata: Metadata = {
         url: ogImage,
         width: 1200,
         height: 630,
-        alt: "Afternoon tea at Emily Rose Tearoom",
+        alt: "Afternoon tea at Emily Rose Tearoom, Corringham",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Emily Rose Tearoom | Corringham",
+    title: "Emily Rose Tearoom | Corringham, Essex",
     description: "Hearty breakfasts, homemade cakes and afternoon teas in Corringham.",
     images: [ogImage],
   },
   robots: { index: true, follow: true },
+  alternates: { canonical: siteUrl },
 };
 
 export default function RootLayout({
@@ -59,8 +63,10 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CafeOrCoffeeShop",
+    "@id": `${siteUrl}/#business`,
     name: "Emily Rose Tearoom",
     image: `${siteUrl}/images/FB_IMG_1792480381489.jpg`,
+    logo: `${siteUrl}/images/FB_IMG_1792480381489.jpg`,
     address: {
       "@type": "PostalAddress",
       streetAddress: "36 Fobbing Road",
@@ -75,9 +81,16 @@ export default function RootLayout({
       longitude: 0.466,
     },
     url: siteUrl,
-    telephone: "+447564840771",
+    telephone: phone,
     servesCuisine: ["British", "Cafe", "Afternoon Tea"],
     priceRange: "££",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      reviewCount: "38",
+      bestRating: "5",
+      worstRating: "1",
+    },
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
@@ -92,6 +105,7 @@ export default function RootLayout({
       { "@type": "LocationFeatureSpecification", name: "Family Friendly" },
       { "@type": "LocationFeatureSpecification", name: "Takeaway" },
     ],
+    hasMap: "https://maps.app.goo.gl/uQRgxaiZ3BDZ55g18",
   };
 
   return (
