@@ -54,6 +54,26 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="bg-navy text-white py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="font-serif text-3xl text-center mb-8">Why choose Emily Rose</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white/10 p-6 rounded-lg">
+              <h3 className="font-serif text-xl text-emerald-200 mb-2">The Naughty Corner</h3>
+              <p className="text-sm text-stone-200">The sign, the burgundy seats, and the tiger wallpaper. Ask for it when you book, or hire the whole room.</p>
+            </div>
+            <div className="bg-white/10 p-6 rounded-lg">
+              <h3 className="font-serif text-xl text-emerald-200 mb-2">Jewel-toned room</h3>
+              <p className="text-sm text-stone-200">Navy walls, emerald chairs, burgundy velvet. Not another plain vintage tearoom.</p>
+            </div>
+            <div className="bg-white/10 p-6 rounded-lg">
+              <h3 className="font-serif text-xl text-emerald-200 mb-2">Proper food, done well</h3>
+              <p className="text-sm text-stone-200">Hearty breakfasts, cakes under glass, and afternoon tea on the birdcage stand. 5-star rated.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-emerald-50 py-12">
         <div className="max-w-4xl mx-auto px-4 text-center reveal">
           <div className="flex justify-center items-center gap-2 mb-2">
@@ -63,13 +83,13 @@ export default function Home() {
           <p className="text-stone-600 mb-6">From 38 reviews</p>
           <div className="grid md:grid-cols-3 gap-4 text-left">
             <div className="bg-white p-4 rounded-lg shadow-sm">
-              <p className="text-sm italic">“Lovely place, great food and friendly service. The cakes are delicious.”</p>
+              <p className="text-sm italic">“What a little gem! Had Afternoon Tea here for a baby shower. Nothing was too much trouble and we had a lovely afternoon. Delicious food and bottomless cups of tea.”</p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-sm">
-              <p className="text-sm italic">“Beautiful tearoom with a unique feel. Perfect for a special afternoon tea.”</p>
+              <p className="text-sm italic">“We come here last Saturday three adults one child all for afternoon teas. was absolutely lovely! all fresh. huge portions. lovely Staff very accommodating. Cakes were so good I went back Tuesday to get more slices.”</p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-sm">
-              <p className="text-sm italic">“Hearty breakfast and a warm welcome. Will definitely be back.”</p>
+              <p className="text-sm italic">“Great place - such a choice of croissants, cakes and French toast (to die for). Beautiful decor and lovely staff.”</p>
             </div>
           </div>
           <a href="https://maps.app.goo.gl/uQRgxaiZ3BDZ55g18" target="_blank" rel="noopener" className="inline-block mt-6 text-burgundy font-medium hover:underline">
@@ -103,6 +123,17 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="bg-burgundy text-white py-12">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="font-serif text-3xl mb-3">Afternoon Tea on the birdcage stand</h2>
+          <p className="mb-4 text-stone-100">Sandwiches, scones, cakes and treats. Ideal for birthdays, baby showers and special occasions. Booking recommended for groups.</p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Link href="/contact" className="bg-white text-burgundy px-6 py-3 rounded-md font-medium">Book Afternoon Tea</Link>
+            <Link href="/private-hire" className="border border-white px-6 py-3 rounded-md font-medium hover:bg-white/10">Private hire the room</Link>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-emerald-50 py-16 reveal">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="font-serif text-3xl text-navy mb-2">What we do well</h2>
@@ -122,6 +153,27 @@ export default function Home() {
             </div>
           </div>
           <Link href="/menu" className="inline-block mt-8 text-burgundy font-medium hover:underline">See the menu →</Link>
+        </div>
+      </section>
+
+      <section className="max-w-6xl mx-auto px-4 py-16">
+        <h2 className="font-serif text-3xl text-center text-navy mb-6">The tearoom for Corringham and nearby</h2>
+        <p className="text-center max-w-2xl mx-auto mb-8 text-stone-600">
+          Serving Corringham, Stanford-le-Hope, Fobbing, Grays and the wider Thurrock area. A short drive from the high street, with parking nearby and a warm welcome when you arrive.
+        </p>
+        <div className="grid md:grid-cols-3 gap-4 text-center text-sm">
+          <div className="bg-white p-4 rounded-lg shadow">
+            <p className="font-medium text-burgundy">Corringham & Stanford-le-Hope</p>
+            <p>Local favourite for breakfast and afternoon tea</p>
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow">
+            <p className="font-medium text-burgundy">Grays & Thurrock</p>
+            <p>Worth the short trip for the unique room</p>
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow">
+            <p className="font-medium text-burgundy">Fobbing & surrounding villages</p>
+            <p>Private hire and celebrations welcome</p>
+          </div>
         </div>
       </section>
 
