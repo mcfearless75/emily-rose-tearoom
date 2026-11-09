@@ -5,12 +5,16 @@ import { useEffect } from "react";
 declare global {
   interface Window {
     dataLayer?: Record<string, unknown>[];
+    gtag?: (...args: unknown[]) => void;
   }
 }
 
-function push(event: Record<string, unknown>) {
+function push(name: string, params: Record<string, unknown>) {
   window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push(event);
+  window.dataLayer.push({ event: name, ...params });
+  if (typeof window.gtag === "function") {
+    window.gtag("event", name, params);
+  }
 }
 
 export default function AnalyticsClicks() {
@@ -22,19 +26,19 @@ export default function AnalyticsClicks() {
       const linkText = (anchor.textContent || "").replace(/\s+/g, " ").trim().slice(0, 80);
 
       if (href.startsWith("tel:")) {
-        push({ event: "phone_click", phone: href.replace("tel:", ""), link_text: linkText });
+        push("phone_click", { phone: href.replace("tel:", ""), link_text: linkText });
         return;
       }
       if (href.includes("maps.app.goo.gl") || href.includes("google.com/maps")) {
-        push({ event: "directions_click", link_text: linkText });
+        push("directions_click", { link_text: linkText });
         return;
       }
       if (href.includes("/contact")) {
-        push({ event: "booking_click", link_url: href, link_text: linkText });
+        push("booking_click", { link_url: href, link_text: linkText });
         return;
       }
       if (href.includes("/private-hire") || href.includes("/event-catering")) {
-        push({ event: "enquiry_click", link_url: href, link_text: linkText });
+        push("enquiry_click", { link_url: href, link_text: linkText });
       }
     }
 

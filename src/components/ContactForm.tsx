@@ -5,6 +5,7 @@ import { useState } from "react";
 declare global {
   interface Window {
     dataLayer?: Record<string, unknown>[];
+    gtag?: (...args: unknown[]) => void;
   }
 }
 
@@ -30,12 +31,12 @@ export default function ContactForm() {
     });
 
     if (res.ok) {
+      const params = { form_name: "contact", enquiry_type: data.subject };
       window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        event: "generate_lead",
-        form_name: "contact",
-        enquiry_type: data.subject,
-      });
+      window.dataLayer.push({ event: "generate_lead", ...params });
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "generate_lead", params);
+      }
       setStatus("Thank you - we'll be in touch soon.");
       form.reset();
     } else {

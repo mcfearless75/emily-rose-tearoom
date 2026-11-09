@@ -13,6 +13,7 @@ const siteUrl = "https://www.emilyrosetearoom.co.uk";
 const ogImage = "/images/FB_IMG_1792480381489.jpg";
 const phone = "+441375768400";
 const GTM_ID = "GTM-NRXBQ9QX";
+const GA_ID = "G-0MBEPLT6P1";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -134,6 +135,14 @@ export default function RootLayout({
             title="Google Tag Manager"
           />
         </noscript>
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+        <Script id="ga4" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+window.gtag = gtag;
+gtag('js', new Date());
+gtag('config', '${GA_ID}');`}
+        </Script>
         <Script id="gtm" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
