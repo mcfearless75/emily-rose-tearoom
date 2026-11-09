@@ -2,6 +2,12 @@
 
 import { useState } from "react";
 
+declare global {
+  interface Window {
+    dataLayer?: Record<string, unknown>[];
+  }
+}
+
 export default function ContactForm() {
   const [status, setStatus] = useState("");
 
@@ -24,7 +30,13 @@ export default function ContactForm() {
     });
 
     if (res.ok) {
-      setStatus("Thank you – we’ll be in touch soon.");
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "generate_lead",
+        form_name: "contact",
+        enquiry_type: data.subject,
+      });
+      setStatus("Thank you - we'll be in touch soon.");
       form.reset();
     } else {
       setStatus("Something went wrong. Please call us instead.");
